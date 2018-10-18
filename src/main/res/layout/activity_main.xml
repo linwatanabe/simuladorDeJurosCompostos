@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="simulador.com.simuladordeinvestimento.MainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp"
+            android:text="Quanto você vai investir inicialmente?"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/capInicial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal"
+            android:digits="0123456789," />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp"
+            android:text="Aplicação mensal"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/aplicMensal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal"
+            android:digits="0123456789," />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp"
+            android:text="Por quanto tempo? (meses)"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/perAno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal"
+            android:digits="0123456789," />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp"
+            android:text="Rentabilidade ao ano (%)"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/taxaJuros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:imeOptions="actionGo"
+            android:inputType="numberDecimal"
+            android:digits="0123456789," />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bCalcular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="calcular"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/bReset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/holo_red_light"
+                android:text="zerar"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp"
+            android:text="Total acumulado"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tAcumulado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</ScrollView>
